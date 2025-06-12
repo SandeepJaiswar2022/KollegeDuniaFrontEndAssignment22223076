@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "./ui/button";
 import { useTheme } from "../hooks/useTheme";
 import { SquareMenu, Moon, Sun, X, BookOpen } from "lucide-react";
-import { getAuth } from "firebase/auth";
 import {
     Sheet,
     SheetContent,
     SheetHeader,
-    SheetTitle,
-    SheetTrigger,
 } from "./ui/sheet";
 import { signOut } from "../store/slices/authSlice";
 import toast from "react-hot-toast";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateRates, calculatePayouts } from "../store/slices/payoutsSlice";
 import { Button } from "../components/ui/button";
