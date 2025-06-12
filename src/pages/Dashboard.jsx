@@ -178,6 +178,19 @@ const Dashboard = () => {
         return pages;
     };
 
+    const userCredentials = {
+        admin: {
+            email: `admin@gmail.com`,
+            password: `admin@321`,
+            role: `admin`,
+        },
+        user: {
+            email: `user@gmail.com`,
+            password: `user@321`,
+            role: `user`,
+        }
+    }
+
 
     return (
         <div className="mx-auto p-4 space-y-6">
@@ -377,6 +390,9 @@ const Dashboard = () => {
                     </Button>
                 </div>
             )}
+
+            <pre>{JSON.stringify(userCredentials, null, 2)}</pre>
+
 
         </div>
     );
