@@ -17,7 +17,7 @@ const initialState = {
 };
 
 // Using NewsAPI as an example
-const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY || `476030c2e0024e74b32b9d046fda2a5e`;
 const NEWS_API_URL = 'https://newsapi.org/v2/everything';
 
 export const fetchArticles = createAsyncThunk(
