@@ -34,8 +34,8 @@ A modern, responsive dashboard application for managing news articles and author
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/SandeepJaiswar2022/KollegeDuniaFrontEndAssignment22223076
+cd KollegeDuniyaFrontEndAssignment
 ```
 
 2. Install dependencies:
