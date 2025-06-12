@@ -27,8 +27,21 @@ const Login = () => {
         }
     };
 
+    const userCredentials = {
+        admin: {
+            email: `admin@gmail.com`,
+            password: `admin@321`,
+            role: `admin`,
+        },
+        user: {
+            email: `user@gmail.com`,
+            password: `user@321`,
+            role: `user`,
+        }
+    }
+
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted">
+        <div className="min-h-screen flex flex-col space-y-3 items-center justify-center bg-gradient-to-br from-background to-muted">
             <div className="w-[400px] bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-bold text-center mb-4 text-gray-900 dark:text-white">Login</h2>
 
@@ -70,6 +83,8 @@ const Login = () => {
                     </button>
                 </form>
             </div>
+            <pre>{JSON.stringify(userCredentials, null, 2)}</pre>
+
         </div>
 
     );
